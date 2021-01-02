@@ -1,4 +1,4 @@
-# Svelte vs NextJS
+# Svelte Kit (upcoming) vs NextJS
 
 Comparison of major features in (the upcoming) Svelte Kit vs NextJS.
 
