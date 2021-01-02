@@ -13,16 +13,16 @@ Overwhelming choices are bad versus providing a clear path forward.
 | Dev: "Fast refresh"                     | 🟢                      | 🟢                  | --         | I.e. UI state preserved across reloads.                                           |
 | Dev: Write modern JS                    | 🟢                      | 🟢                  | --         | Svelte compiler processes it. NextJS uses Babel for this.                         |
 | Dev: A11y console hints                 | 🟢                      | ❌                  | Svelte Kit |                                                                                   |
-| Dev: Prettier                           | 🟢 \*                   | 🟢                  | --         | For `.svelte` or `.jsx` files. \*via 'Svelte for VSCode' extension.               |
-| Prod: Builder                           | 🟢 Rollup               | 🟢 Webpack          | --         | E.g. Minify assets, etc.                                                          |
+| Dev: Prettier                           | 🟢 \*                   | 🟢                  | --         | For `.svelte` or `.jsx` files. \*via `Svelte for VSCode` extension.               |
+| Prod: Bundler                           | 🟢 Rollup               | 🟢 Webpack          | --         | E.g. Minify assets, etc.                                                          |
 | Prod: Auto code splitting, per route    | 🟢                      | 🟢                  | --         | I.e. Auto code splits JS per route & bundles appropriately.                       |
-| Prod: HTTP2 push of JS/CSS              | ❌                      | ❌                  | _Neither_  | I.e. Set initial page's HTML headers to push JS & CSS. Requires host support.     |
+| Prod: HTTP2 push of JS/CSS              | ❌                      | ❌                  | _neither_  | I.e. Set initial page's HTML headers to push JS & CSS. Requires host support.     |
 | Kb size: Hello World                    | _?_ 7                   | _?_ 204             | Svelte Kit | _old sizes_, <https://svelte.dev/blog/sapper-towards-the-ideal-web-app-framework> |
 | Kb size: "Real World" app               | _?_ 39.6 (11.8 gzip)    | _?_ 327 (85.7 gzip) | Svelte Kit | _old sizes_, <https://svelte.dev/blog/sapper-towards-the-ideal-web-app-framework> |
 | Rendering: SSR, per route               | 🟢                      | 🟢                  | --         | I.e. Server-side rendered (at run time).                                          |
 | Rendering: SSG, per route               | 🟢                      | 🟢                  | --         | I.e. Static (at build time).                                                      |
 | Rendering: Incremental SSG, per route   | _?_                     | 🟢                  | NextJS     | I.e. Static 'on demand' in prod--1st req dynamic then cached.                     |
-| Headers: s-max-age & max-age, per route | ❌                      | ❌                  | _Neither_  |                                                                                   |
+| Headers: s-max-age & max-age, per route | ❌                      | ❌                  | _neither_  |                                                                                   |
 | Routes: File-based routing              | 🟢                      | 🟢                  | --         | For simplicity. Other routing utilities should be included.                       |
 | Routes: "SPA mode"                      | _?_                     | 🟢                  | NextJS     | I.e. After initial page load, client-side routing is used.                        |
 | Routes: Pre-fetch JS/CSS on link hover  | _?_                     | 🟢 next/link        | NextJS     | NextJS' is sophisticated but requires using their link component; see docs.       |
@@ -32,7 +32,7 @@ Overwhelming choices are bad versus providing a clear path forward.
 | Built-in: CSS scoping                   | 🟢                      | 🟢                  | Svelte Kit | Svelte's is automatic. NextJS' is via CSS modules or CSS in JSX (not as clean).   |
 | Built-in: Web vitals reporting          | ❌                      | 🟢                  | NextJS     | Vercel & Cloudflare 'Browser Insights' offer free analytics dashboards.           |
 | Built-in: Image optimizations           | ❌                      | 🟢 next/image       | NextJS     | On-demand optimized image generation with caching.                                |
-| 3rd party: Auth _IMPORTANT_             | ❌                      | 🟢 NextAuth.js      | NextJS     | NextAuth.js is defacto standard; easy to use; email, social, &/or magic link.     |
+| 3rd party: Auth _IMPORTANT_             | ❌                      | 🟢 NextAuth.js      | NextJS     | NextAuth.js is defacto standard; easy; email, social, &/or magic link.     |
 | 3rd party: Forms                        | 🟢 Sveltik              | 🟢 Formik           | --         | Sveltik is a port of Formik for React. Can use Yup for validation.                |
 | 3rd party: SWR-like data fetching       | ❔ svelte-query (good?) | 🟢 SWR              | _?_        | SWR is by Vercel. Easy fetch/isLoading/errors/caching.                            |
 | Tailwind CSS compatible                 | 🟢 \*                   | 🚧 RFC \*\*         | --         | \*via github.com/svelte-add/tailwindcss \*\*RFC for `npx init tailwind`           |
