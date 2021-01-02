@@ -9,7 +9,7 @@ Overwhelming choices are bad versus providing a clear path forward.
 | --------------------------------------- | -------------------- | ------------------- | ---------- | --------------------------------------------------------------------------------- |
 | UI lib                                  | Svelte               | React (or Preact)   | Svelte Kit | Svelte offers faster, more minimal DOM updates & smaller Kb client size.          |
 | Dev: Hot reload                         | yes                  | yes                 | --         | I.e. Auto reload on file save.                                                    |
-| Dev: O(1) hot reload                    | yes (Snowpack)       | _no_                | Svelte Kit | I.e. Processes only the changed files. Fast even in big projects.                 |
+| Dev: O(1) hot reload                    | yes (Snowpack)       | -_no_                | Svelte Kit | I.e. Processes only the changed files. Fast even in big projects.                 |
 | Dev: "Fast refresh"                     | yes                  | yes                 | --         | I.e. UI state preserved across reloads.                                           |
 | Dev: Write modern JS                    | yes                  | yes                 | --         | Svelte compiler processes it. NextJS uses Babel for this.                         |
 | Dev: A11y console hints                 | yes                  | _no_                | Svelte Kit |                                                                                   |
